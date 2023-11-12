@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.counter-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #191919;
+    border-radius: 20px;
+    padding: 2rem;
+    color: #f4fafc;
+    gap: 2rem;
+}
+
+.counter-box .time input {
+    border-radius: 10px;
+    border: .5px solid gray;
+    text-align: center;
+    background-color: rgb(232, 232, 232);
+}
+
+.counter-box .time input::-webkit-outer-spin-button,
+.counter-box .time input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.counter-box .time input:focus {
+    outline: none;
+}
+
+.counter-box .btn {
+    background-color: rgb(232, 232, 232);
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: .3rem .4rem;
+    transition: .3s;
+
+    &:hover {
+        background-color: rgb(211, 211, 211);
+        transition: .3s;
+    }
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3rem;
+}
+
+.pause-stop-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.pause-stop-btn .btn {
+    width: 100%;
+}
+
+.pause-stop-btn #pauseTimer {
+    background-color: #2597f4;
+    color: white;
+    transition: .3s;
+
+    &:hover {
+        background-color: #176eb5;
+    }
+}
+
+.pause-stop-btn #stopTimer {
+    background-color: #f43325;
+    color: white;
+    transition: .3s;
+
+    &:hover {
+        background-color: #c2160a;
+    }
+}
