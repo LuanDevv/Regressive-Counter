@@ -97,6 +97,7 @@ body {
 
     &:hover {
         background-color: #176eb5;
+        transition: .3s;
     }
 }
 
