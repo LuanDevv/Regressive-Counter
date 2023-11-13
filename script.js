@@ -73,12 +73,16 @@ window.onload = function () {
     stopButton.disabled = true;
 
     startButton.addEventListener("click", function () {
-        let time = parseInt(document.getElementById("timeReceived").value, 10);
+        let hours = parseInt(document.getElementById("hours").value, 10) || 0;
+        let minutes = parseInt(document.getElementById("minutes").value, 10) || 0;
+        let seconds = parseInt(document.getElementById("seconds").value, 10) || 0;
+
+        let time = hours * 3600 + minutes * 60 + seconds;
         let display = document.querySelector("#timer");
 
-        if (!isNaN(time)) {
+        if (!isNaN(time) && time > 0) {
             display.style.color = "#ffffff";
-            display.style.fontSize = "3rem";
+            display.style.fontSize = "3.5rem";
 
             Timer(time, display);
 

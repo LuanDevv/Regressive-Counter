@@ -14,21 +14,28 @@
 
     <div class="counter-box">
 
-        <h1 class="py-2">Regressive Timer</h1>
+        <h1 class="pt-2">Timer Regressivo</h1>
 
         <div class="time">
-            <input type="number" placeholder="Time in seconds..." class="py-1 px-1" id="timeReceived">
-            
-            <button class="btn" id="startTimer">Time</button>
-
+            <div>
+                <input type="number" id="hours" placeholder="Hora(s)" class="py-1 px-1">
+            </div>
+            <div>
+                <input type="number" id="minutes" placeholder="Minuto(s)" class="py-1 px-1">
+            </div>
+            <div>
+                <input type="number" id="seconds" placeholder="Segundo(s)" class="py-1 px-1">
+            </div>
         </div>
 
         <div class="py-2" id="timer">00:00:00</div>
 
+        <button class="btn" id="startTimer">Iniciar</button>
+
         <div class="pause-stop-btn">
-                <button class="btn" id="pauseTimer">Pause</button>
-            
-                <button class="btn" id="stopTimer">Stop</button>
+            <button class="btn" id="pauseTimer">Pause</button>
+
+            <button class="btn" id="stopTimer">Stop</button>
         </div>
 
     </div>
