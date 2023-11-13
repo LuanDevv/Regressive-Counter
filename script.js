@@ -44,11 +44,11 @@ function Timer(time, display) {
 
         if (isPaused == false) {
             isPaused = !isPaused;
-            pauseButton.textContent = 'Return';
+            pauseButton.textContent = 'Retomar';
             pauseButton.style.backgroundColor = '#4caf50';
         } else {
             isPaused = !isPaused;
-            pauseButton.textContent = 'Pause';
+            pauseButton.textContent = 'Pausar';
             pauseButton.style.backgroundColor = '#2597f4';
         }
     });
